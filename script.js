@@ -12,6 +12,9 @@ submitBtn.addEventListener('click',function(){
         document.getElementById('notify-didnotmatched').style.display="block";
         document.getElementById('notify-matched').style.display="none";
         document.getElementsByClassName('action-left')[0].style.display="none";
+
+        document.getElementById('generate-display').value = " ";
+        document.getElementById('submit-display').value = " ";
     }
     else{
         document.getElementById('notify-matched').style.display="block";
