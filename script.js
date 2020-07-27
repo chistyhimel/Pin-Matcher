@@ -11,12 +11,13 @@ submitBtn.addEventListener('click',function(){
     if ( displayGenNum == displaySubNum){
         document.getElementById('notify-didnotmatched').style.display="block";
         document.getElementById('notify-matched').style.display="none";
-        document.getElementById('try-left').style.display="none";
+        document.getElementsByClassName('action-left')[0].style.display="none";
     }
     else{
         document.getElementById('notify-matched').style.display="block";
         document.getElementById('notify-didnotmatched').style.display="none";
         var tryLeft = parseFloat(document.getElementById('try-left').innerText);
+        document.getElementsByClassName('action-left')[0].style.display="block";
        var tryLeft= document.getElementById('try-left').innerText = tryLeft-1;
         if (tryLeft<=0){
             document.getElementById('submit-btn').style.display="none";
