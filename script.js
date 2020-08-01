@@ -31,6 +31,9 @@ submitBtn.addEventListener("click", function () {
     var tryLeft = (document.getElementById("try-left").innerText = tryLeft - 1);
     if (tryLeft <= 0) {
       document.getElementById("submit-btn").style.display = "none";
+
+      document.getElementById("generate-display").value = " ";
+      document.getElementById("submit-display").value = " ";
     }
   }
 });
