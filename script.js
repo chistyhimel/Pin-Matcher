@@ -10,13 +10,13 @@ generateBtn.addEventListener("click", function () {
 
 const submitBtn = document.getElementById("submit-btn");
 submitBtn.addEventListener("click", function () {
-  var displayGenNum = parseFloat(
+  var displayGenerateNum = parseFloat(
     document.getElementById("generate-display").value
   );
-  var displaySubNum = parseFloat(
+  var displaySubmitNum = parseFloat(
     document.getElementById("submit-display").value
   );
-  if (displayGenNum === displaySubNum) {
+  if (displayGenerateNum === displaySubmitNum) {
     document.getElementById("notify-matched").style.display = "block";
     document.getElementById("notify-notmatched").style.display = "none";
     document.getElementsByClassName("action-left")[0].style.display = "none";
